@@ -1,0 +1,32 @@
+{
+  "patients": [
+    {
+      "name": "Hans Navarro",
+      "age": 22,
+      "gender": "Masculino",
+      "location": "Ate, Lima, Perú",
+      "username": "Hans12345",
+      "password": "Hans12345",
+      "images": []
+    },
+    {
+      "name": "Tommy Navarro",
+      "age": 32,
+      "gender": "Masculino",
+      "location": "Urubamba, Cuzco, Perú",
+      "username": "Hans67890",
+      "password": "Hans67890",
+      "images": []
+    }
+  ],
+  "specialists": [
+    {
+      "username": "20202501",
+      "password": "20202501"
+    },
+    {
+      "username": "20202502",
+      "password": "20202502"
+    }
+  ]
+}
