@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio de Sesión</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo de Glaucoma</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <script defer src="script.js"></script> <!-- Enlace al archivo JS -->
 </head>
 <body>
-  <div class="login-container">
-    <h2>Iniciar Sesión</h2>
-    <form id="loginForm">
-      <label for="username">Usuario:</label>
-      <input type="text" id="username" name="username" required>
-      
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" required>
-      
-      <button type="submit">Ingresar</button>
-    </form>
-    <p id="error-message"></p>
-    <a href="register.html">Nuevo Registro</a>
-  </div>
+    <header>
+        <h1>Monitoreo de Glaucoma</h1>
+    </header>
 
-  <script src="app.js"></script>
+    <main>
+        <!-- Formulario de subida de imagen -->
+        <section>
+            <h2>Sube una Imagen de la Retina</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="image">Selecciona una imagen:</label>
+                <input type="file" name="image" id="image" accept="image/*" required>
+                <br><br>
+                <label for="description">Descripción:</label>
+                <textarea name="description" id="description" rows="4" cols="50" placeholder="Escribe una descripción aquí" required></textarea>
+                <br><br>
+                <button type="submit">Subir Imagen</button>
+            </form>
+        </section>
+
+        <!-- Otras secciones de tu página -->
+        <section>
+            <h2>Información del Paciente</h2>
+            <!-- Contenido relacionado con la información del paciente -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Monitoreo de Glaucoma</p>
+    </footer>
 </body>
 </html>
